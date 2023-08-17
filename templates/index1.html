@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gauge Graph</title>
+  <!-- Include Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <div id="cpu-gauge"></div>
+  <div id="mem-gauge"></div>
+
+  <script>
+    var cpuMetric = {{ cpu_metric}};
+    var memMetric = {{ mem_metric}};
+    var message = "{{ message}}";
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
